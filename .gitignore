@@ -1,0 +1,9 @@
+# Environment
+.env
+
+# Build artifacts
+node_modules/
+dist/
+
+# Apps Script tooling
+.clasp.json
