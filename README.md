@@ -84,4 +84,4 @@ Este projeto está licenciado sob os termos da [Licença MIT](LICENSE). 📝
 
 ---
 
-Feito com foco em automatizar rotinas de leilão. 💙
+Feito com foco em automatizar o controle de tarefas da equipe de leilão. 💙
