@@ -10,7 +10,6 @@ Este repositório contém uma automação em Google Apps Script (GAS) que cria a
 
 ## ✨ Destaques
 
-- 🔐 Configuração sensível movida para variáveis de ambiente e Script Properties.
 - 🧭 Funções auxiliares para montar o plano positivo/negativo de atividades.
 - 🔁 Webhook com lock, logging estruturado e quarentena de erros.
 - 🧪 Funções de teste prontas para validar integrações (`testarLeiloes` e `testarWebhookManual`).
@@ -38,16 +37,16 @@ Cadastre as chaves abaixo em **Project Settings > Script Properties** dentro do 
 | Chave                | Obrigatório? | Default                      | Descrição                                            |
 | -------------------- | ------------ | ---------------------------- | ---------------------------------------------------- |
 | PIPEDRIVE_API_TOKEN  | Sim          | -                            | Token de acesso da API do Pipedrive.                 |
-| PIPEDRIVE_DOMAIN     | Não          | https://api.pipedrive.com/v1 | Endpoint base da API opcional.                       |
-| TIMEZONE             | Não          | America/Sao_Paulo            | Timezone usado para cálculos de data.                |
-| ACTIVITY_TYPE        | Não          | task                         | Tipo de atividade criada no Pipedrive.               |
+| PIPEDRIVE_DOMAIN     | Sim          | https://api.pipedrive.com/v1 | Endpoint base da API opcional.                       |
+| TIMEZONE             | Sim          | America/Sao_Paulo            | Timezone usado para cálculos de data.                |
+| ACTIVITY_TYPE        | Sim          | task                         | Tipo de atividade criada no Pipedrive.               |
 | WEBHOOK_SHEET_ID     | Sim          | -                            | ID da planilha usada para logs.                      |
-| WEBHOOK_LOG_SHEET    | Não          | WebhookLog                   | Nome da aba onde as execuções são registradas.       |
-| WEBHOOK_ERROR_SHEET  | Não          | WebhookErrors                | Nome da aba de erros.                                |
-| WEBHOOK_ALLOWED_DEAL | Não          | vazio                        | ID específico permitido (ou deixe vazio para todos). |
-| WEBHOOK_LOCK_SECONDS | Não          | 90                           | Tempo do lock anti-duplicidade.                      |
-| WEBHOOK_MAX_LOG_ROWS | Não          | 200                          | Limite de linhas de log.                             |
-| WEBHOOK_MAX_ERR_ROWS | Não          | 100                          | Limite de linhas de erro.                            |
+| WEBHOOK_LOG_SHEET    | Sim          | WebhookLog                   | Nome da aba onde as execuções são registradas.       |
+| WEBHOOK_ERROR_SHEET  | Sim          | WebhookErrors                | Nome da aba de erros.                                |
+| WEBHOOK_ALLOWED_DEAL | Não          | null                         | ID específico permitido (ou deixe vazio para todos). |
+| WEBHOOK_LOCK_SECONDS | Sim          | 90                           | Tempo do lock anti-duplicidade.                      |
+| WEBHOOK_MAX_LOG_ROWS | Sim          | 200                          | Limite de linhas de log.                             |
+| WEBHOOK_MAX_ERR_ROWS | Sim          | 100                          | Limite de linhas de erro.                            |
 
 #### 🔄 Sincronizar .env ➜ Script Properties
 
