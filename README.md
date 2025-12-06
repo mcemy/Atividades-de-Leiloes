@@ -72,16 +72,7 @@ Execute as funções acima pelo editor do Apps Script (menu `Executar`) para val
 2. 🌐 Publique o script como Web App no Apps Script (`Deploy > Manage deployments`).
 3. ⬆️ Se estiver usando `clasp`, mantenha `.clasp.json` fora do versionamento e execute `clasp push` após editar os `.gs`.
 
-## 🤝 Contribuição
-
-1. 🍴 Abra um fork.
-2. 🌱 Crie um branch descrevendo a feature/bugfix.
-3. 📬 Abra um Pull Request com um resumo das mudanças e evidências relevantes (logs/imagens).
-
-## 📄 Licença
-
-Este projeto está licenciado sob os termos da [Licença MIT](LICENSE). 📝
 
 ---
 
-Feito com foco em automatizar o controle de tarefas da equipe de leilão. 💙
+
